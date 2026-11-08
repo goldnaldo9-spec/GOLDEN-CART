@@ -207,4 +207,5 @@ export const productsByCategory = (slug: string) => products.filter(product => p
 export const featuredProducts = products.filter(product => product.tags.includes("trending"));
 export const bestSellers = products.filter(product => product.tags.includes("best-seller"));
 export const newArrivals = products.filter(product => product.tags.includes("new"));
+export const recommendedProducts = products.filter(product => product.rating >= 4.6).slice(0, 4);
 export const formatPrice = (value: number) => new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(value);

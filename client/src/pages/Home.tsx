@@ -4,7 +4,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { CategoryStrip, ProductShelf, TrustStrip } from "@/components/marketplace";
-import { bestSellers, featuredProducts, newArrivals } from "@/lib/catalog";
+import { bestSellers, featuredProducts, newArrivals, recommendedProducts } from "@/lib/catalog";
 
 export default function Home() {
   const [, setLocation] = useLocation();
@@ -21,6 +21,7 @@ export default function Home() {
     <section className="container py-9"><div className="deal-panel flex flex-col justify-between gap-8 rounded-[28px] p-7 sm:flex-row sm:items-end sm:p-10"><div><p className="eyebrow text-[#9b6a1e]">Weekend notes</p><h2 className="mt-3 max-w-xl text-3xl font-black tracking-[-0.055em] sm:text-5xl">A softer start to the season.</h2><p className="mt-4 max-w-md text-sm leading-6 text-[#6f675c]">Take 10% off a first order over $50. No noisy fine print, just a nicer reason to try something new.</p></div><Link href="/shop" className="inline-flex items-center gap-2 rounded-full bg-[#29261f] px-5 py-3 text-sm font-bold text-white">Shop today <ArrowRight size={16} /></Link></div></section>
     <ProductShelf products={bestSellers} eyebrow="Loved by many" title="The ones people come back for." href="/shop?sort=best" />
     <ProductShelf products={newArrivals} eyebrow="Just in" title="New things, thoughtfully picked." href="/shop?sort=new" />
+    <ProductShelf products={recommendedProducts} eyebrow="Picked for you" title="Recommended for your next browse." href="/shop" />
     <TrustStrip />
   </div>;
 }
