@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Golden Cat logo">
+  <rect width="512" height="512" rx="120" fill="#c9953a"/>
+  <path d="M138 170 178 116l42 54c24-9 48-9 72 0l42-54 40 54c21 16 34 44 34 79 0 78-67 137-154 137S100 327 100 249c0-35 14-63 38-79Z" fill="#fff8e9"/>
+  <circle cx="198" cy="248" r="12" fill="#29261f"/>
+  <circle cx="314" cy="248" r="12" fill="#29261f"/>
+  <path d="M236 292c14 12 26 12 40 0" fill="none" stroke="#29261f" stroke-width="10" stroke-linecap="round"/>
+</svg>
